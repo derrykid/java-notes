@@ -1,5 +1,13 @@
 ## Hibernate, connect to database
 
+In pom.xml, add the dependency:
+```
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+```
+
 In application.properties
 ```
 spring.jpa.hibernate.ddl-auto=update
