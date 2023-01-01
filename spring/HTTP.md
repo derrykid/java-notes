@@ -1,39 +1,29 @@
-## API endpoint
+[toc]
 
-An API endpoint is a **specific "point of entry"** in an API. It's the most crucial part of an API's documentation. Endpoints are the main thing to make requests. So if an API's endpoints aren't listed clearly in the documentation, the API is essentially unusable.
-
-### Make a API request
-
-To make an API call, you'll need to create an API URL path. This is usually done by **appending an endpoint to your base URL.** 
-
-
-Base URL, or domain name:
-```
-https://derry.club/
-```
-
-To access the endpoint
-```
-https://derry.club/support
-```
-
-`/support` is the endpoint. It's called "point of entry".
-
-If you access an API through its different endpoints, you can expect different sets of responses for each one.
-
-## API Headers
+## HTTP Headers
 
 It tells:
 1. Request and response body
 2. Request authorization
 3. Response caching
 4. Response cookies
+and more
 
-### Find headers in browser
+### How to see the headers?
+
+#### Find headers in browser
 
 Open Developer mode > Inspect. Navigate to the tab "NetWork", Use `Ctrl + R` to reload. Find the `Name` tab under the flow chart. Click the source url, the headers tab is shown.
 
-### API key - authentication
+#### Use cURL tool to get Header information
+
+```
+curl -v google.com
+```
+
+This displays the HTTP conversation. Requests are precededby `>`, while responses are preceded by `<`.
+
+### authentication header
 
 Sometimes, you’ll need some sort of authentication to make a request. For this, you might need an API Key, which is often provided by the server.
 
@@ -44,13 +34,6 @@ In the header:
 }
 ```
 
-### Use cURL tool to get Header information
-
-```
-curl -v google.com
-```
-
-This displays the HTTP conversation. Requests are precededby `>`, while responses are preceded by `<`.
 
 
 ## HTTP Verb
@@ -157,3 +140,27 @@ This indicates a conflict. For instance, you're using a `PUT` request to create 
 ### 500 Internal Server Error
 
 When all else fails; generally, a 500 response is used when processing fails due to unanticipated circumstances on the server side, which cause the server to error out.
+
+# Restful API
+## Rest API endpoint
+
+An API endpoint is a **specific "point of entry"** in an API. It's the most crucial part of an API's documentation. Endpoints are the main thing to make requests. So if an API's endpoints aren't listed clearly in the documentation, the API is essentially unusable.
+
+### Make a restful service
+
+To make an HTTP API call, you'll need to create an API URL path. This is usually done by **appending an endpoint to your base URL.** 
+
+
+Base URL, or domain name:
+```
+https://derry.club/
+```
+
+To access the endpoint
+```
+https://derry.club/support
+```
+
+`/support` is the endpoint. It's called "point of entry".
+
+If you access an API through its different endpoints, you can expect different sets of responses for each one.
