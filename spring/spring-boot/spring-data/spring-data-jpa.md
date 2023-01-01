@@ -1,11 +1,11 @@
 ## Hibernate, connect to database
 
 In pom.xml, add the dependency:
-```
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
+```xml
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+</dependency>
 ```
 
 In application.properties

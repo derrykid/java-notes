@@ -1,12 +1,21 @@
 [toc]
 
-[Link tut](https://www.youtube.com/watch?v=VE_NRRxc2lw&list=PLEocw3gLFc8Vli5p6rWHnNcYxFRbaIfIJ&index=16) 
+# Spring RESTful service
+
+[Laur Spilca Youtube Tutorial series](https://www.youtube.com/watch?v=VE_NRRxc2lw&list=PLEocw3gLFc8Vli5p6rWHnNcYxFRbaIfIJ&index=16) 
+
+[spring docs](https://docs.spring.io/spring-framework/docs/3.0.0.M4/reference/html/ch15s03.html)
+
+Spring Restful service is a popular backend application. The architecture usually is made up with 3 layers: Controller, Service, and Repository.
+
+
 ## Configuration setup
 
 ### `@SpringBootApplication` - define the app root
 
 - The start point of program
 - It's with `@ComponentScan` - tell spring to create beans in which the classes have been annotated with.
+
 ## Spring RESTful Service architecture
 
 ![](images/control-service-repo-patterns.png)
