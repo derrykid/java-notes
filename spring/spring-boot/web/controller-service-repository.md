@@ -390,6 +390,9 @@ public void statusTest(HttpServletResponse reponse) {
 
 > Taking care of business logic. It performs the manipulation of an entity, an object, or a desired behaviour.
 
+make use of:
+- `@Transactional` - in service layer, a logic might perform multiple database transaction. Use this for ACID.
+
 Common example:
 ```java
 @Service
