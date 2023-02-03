@@ -215,7 +215,8 @@ There are more available ones:
 
 ## @Inherited
 
-The @Inherited annotation signals that a custom Java annotation used in a class should be inherited by subclasses inheriting from that class.
+> The @Inherited annotation signals that a custom Java annotation used in a class should be inherited by subclasses;
+
 
 ```java
 @Inherited
@@ -229,7 +230,7 @@ public class MySuperClass { ... }
 public class MySubClass extends MySuperClass { ... }
 ```
 
-In this example the class MySubClass inherits the annotation @MyAnnotation because MySubClass inherits from MySuperClass, and MySuperClass has a @MyAnnotation annotation.
+The subclass extends super class. Implicitly, it inherits the `@MyAnnotation` as well.
 
 ## @Documented
 
