@@ -92,14 +92,6 @@ Common appenders:
 
 ```
 
-2. Custom color
-```
-<Console name="ConsoleAppender" target="SYSTEM_OUT">
-    <PatternLayout pattern="%style{%date{DEFAULT}}{yellow}
-      %highlight{%-5level}{FATAL=bg_red, ERROR=red, WARN=yellow, INFO=green} 
-      %message"/>
-</Console>
-```
 
 ### RollingFile
 
